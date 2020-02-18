@@ -1,0 +1,42 @@
+body {
+	background-color: coral;
+}
+
+@keyframes fancyshmancy {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes flashy {
+	from {
+		fill: #fff;
+	}
+	to {
+		fill: turquoise;
+	}
+}
+
+#beepcord {
+	stroke-dasharray: 1800;
+	stroke-dashoffset: 1800;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation: fancyshmancy 6s linear forwards;
+}
+
+#screen,
+.back-ground-color-screen-02,
+.back-ground-color-screen-03,
+.back-ground-color-screen-04,
+.back-ground-color-screen-05 {
+	stroke: #000;
+	stroke-width: 4;
+	fill: #fff;
+	animation: flashy 5s infinite;
+}
+.fixing-background-01 {
+	fill: coral;
+	stroke: #000;
+	stroke-width: 4;
+}
